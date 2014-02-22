@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot'); /* IE9 Compat Modes */
+	src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('fonts/icomoon.woff') format('woff'), /* Modern Browsers */
+	     url('fonts/icomoon.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('fonts/icomoon.svg#svgicomoon') format('svg'); /* Legacy iOS */
+	}
+
+/**********  FOOTER STYLES  **********/
+.site-footer>div {
+	text-align: justify;
+}
+
+.site-footer>div:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+.footer-logo {
+	display: inline-block;
+}
+
+.footer-logo img {
+
+}
+
+.footer-logo div {
+	color: #fff;
+}
+
+/*.footer-social {
+	display: inline-block;
+	margin: 0 2em -1.75em;
+}
+
+.footer-social-row {
+	float: left;
+	padding-left: 32px;
+}
+
+.footer-social-item {
+	padding-bottom: 2em;
+}
+
+.footer-social-item span {
+	display: inline-block;
+	font-family: 'icomoon';
+	color: #fff;
+	font-size: 28px;
+	padding-right: 8px;
+}
+
+.social-email:before {
+	content: '\e602';
+}
+.social-facebook:before {
+	content: '\e600';
+}
+.social-linkedin:before {
+	content: '\e603';
+}
+.social-twitter:before {
+	content: '\e601';
+}
+
+.footer-social-item a {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+}*/
