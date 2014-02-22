@@ -17,9 +17,7 @@ $post_image_id = get_post_thumbnail_id($post_to_use->ID);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
-  filter: blur(5px);"><div class="jumbotron-overlay">
-
-</div></div>
+  filter: blur(5px);"></div>
 
 	<div class="hero-unit">
 	<h1><?php single_post_title(); ?></h1>

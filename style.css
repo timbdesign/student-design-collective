@@ -545,11 +545,6 @@ object {
 	width: 100%;
 	z-index: 1000 !important;
 }
-
-.page-id-9 .picturebackground, .page-id-2 .picturebackground, .page-id-7 .picturebackground {
-	background-color: rgba(0, 0, 0, 0.5);
-	background-image: url('images/bottom-inside.jpg');
-}
 .clearbackground {
 	background: none;
 }
@@ -1438,7 +1433,7 @@ height: 100px;
 	padding-bottom: 60%;
 }*/
 .hero-unit {
-	margin-top: -30%;
+	margin-top: 15%;
 /*position: fixed;*/
 	text-align: center;
 	font-size: 95%;
@@ -1587,24 +1582,24 @@ padding-top: 40%;
 padding-top: 40%;
 }
 
-.single .hero-unit {position: absolute;
-margin-top: -15%;}
-.page-template-officers-php .hero-unit {
-margin-top: -17%;}
-.single .post_thumbnail {float:right; display: inline-block; width: 50%; height: auto; margin: 20px;}
-.page-template-about-php .jumbotron-overlay {
-padding-top: 40%;
+.single .hero-unit {
+	position: absolute;
+	margin-top: -15%;
 }
+.page-template-officers-php .hero-unit {
+	margin-top: 11%;
+}
+.single .post_thumbnail {float:right; display: inline-block; width: 50%; height: auto; margin: 20px;}
 
 .page-template-about-php .hero-unit {
-margin-top: -17%;}
-
-.page-template-contact-php .jumbotron-overlay {
-padding-top: 40%;
+	margin-top: 11%;
 }
-
+.page-template-contact-php .jumbotron-overlay {
+	padding-top: 40%;
+}
 .page-template-contact-php .hero-unit {
-margin-top: -17%;}
+	margin-top: -17%;
+}
 .half-contact {width:48%; display: inline-block;}
 
 .clearfix {content: " "; /* Older browser do not support empty content */
@@ -1647,7 +1642,7 @@ padding: 0em 1em 3em 1em;}
  	width: 29%;
  }
  .two-thirds {}
- .page .hero-unit { margin-top: -15%; margin-left: 6%;}
+ .page .hero-unit { margin-top: 15%; margin-left: 6%;}
 }
 @media screen and (max-width: 900px) {
 
@@ -1655,7 +1650,7 @@ padding: 0em 1em 3em 1em;}
 .one-third {width: 100%; display: inline-block; vertical-align: top;}
 
  .half-contact {display: block; width: 97%;}
- .page .hero-unit { margin-top: -15%;}
+ .page .hero-unit { margin-top: 19%;}
  .page-template-about-php .jumbotron-overlay {
 padding-top: 60%;
 }
@@ -1667,7 +1662,6 @@ padding-top: 60%;
  .single .post_thumbnail {float:right; display: inline-block; width: 95%; height: auto; margin: 20px;}
 
  .half-contact {display: block; width: 97%; margin: 30px 0;}
- .page .hero-unit { margin-top: 10%;}
  .page-template-about-php .jumbotron-overlay {
 padding-top: 60%;
 }
@@ -1677,4 +1671,5 @@ padding-top: 60%;
  .col-md-2 {
  	width: 38%;
  }
+ .page .hero-unit { margin-top: 45%;}
 }
