@@ -615,6 +615,12 @@ nav {
 	content: '';
 	height: 400px;
 }
+
+.jumbotron-after-home::before {
+	display: block;
+	content: '';
+	height: 530px;
+}
 .nav-collapse ul ul a {
 	font-size: 2em;
 }
@@ -1226,7 +1232,7 @@ body {
 	.right-of-logo a {display: none;}
 	.site-branding  {float: left; text-align: left; margin: 5px 0 0 10px;}
 	.site-branding img {width: 70%; height: auto;}
-	#masthead {text-align: left; }
+	#masthead {text-align: left; position: fixed;}
 	.jumbotron-overlay {padding-top: 120%; padding-bottom: 60%;}
 	.hero-unit {margin: -100px auto; width: 90%; text-align: center; position: relative;}
 	.hero-unit h1 {line-height: 1.2em; font-size: 2.3em;}
@@ -1269,15 +1275,16 @@ body {
 		margin: 0 auto;
 	}
 	.ExcerptClass {
-		margin: 0 auto;
-		display: inline-block;
-		max-width: 400px;
-		vertical-align: top;
-	}
+margin: 0 auto;
+display: inline-block;
+width: 95%;
+vertical-align: top;
+}
 	.moretag {
 		color: #c62b8e;
 		border-style:solid;
-		margin: 40px auto;
+		margin-top: 40px;
+		margin-bottom: 20px;
 		border-width:2px;
 		border-color: #c62b8e;
 		float: right;
@@ -1288,7 +1295,7 @@ body {
 		font-size: 1.2em;
 		font-weight: 300;
 		letter-spacing: .09em;
-		margin-right: 35%;
+		margin-right: 2%;
 	}
 	a:hover .moretag {
 		background: #c62b8e;
@@ -1300,6 +1307,8 @@ body {
 		font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
 		text-transform: uppercase;
 	}
+.footer-social {margin-right: -90px;
+margin-top: 30px;}
 }
 
 @media only screen and (min-width: 950px) and (max-width: 1200px) {
@@ -1351,6 +1360,7 @@ body {
 	.twothirds {
 		width: 100%;
 		max-width: 100%;
+		padding: 10px;
 	}
 	.onethird {
 		width: 100%;
@@ -1383,6 +1393,8 @@ padding: 0em 4em 3em 4em;
 margin: 1.5em 0 0;
 padding: 0em 1em 3em 1em;
 }
+.darkHeader {background-color: black;}
+
 }
 
 
@@ -1598,8 +1610,9 @@ padding-top: 40%;
 	padding-top: 40%;
 }
 .page-template-contact-php .hero-unit {
-	margin-top: -17%;
+	margin-top: 12%;
 }
+.home .hero-unit {margin-top: 18%;}
 .half-contact {width:48%; display: inline-block;}
 
 .clearfix {content: " "; /* Older browser do not support empty content */
@@ -1654,6 +1667,7 @@ padding: 0em 1em 3em 1em;}
  .page-template-about-php .jumbotron-overlay {
 padding-top: 60%;
 }
+.home .hero-unit {margin-top: 39%;}
 }
 @media screen and (max-width: 700px) {
  .col-md-2 {
@@ -1665,6 +1679,7 @@ padding-top: 60%;
  .page-template-about-php .jumbotron-overlay {
 padding-top: 60%;
 }
+
 }
 
 @media screen and (max-width: 530px) {
@@ -1673,3 +1688,8 @@ padding-top: 60%;
  }
  .page .hero-unit { margin-top: 45%;}
 }
+
+@media screen and (max-width: 979px) {
+.jumbotron {position: absolute !important;}
+}
+

@@ -25,6 +25,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
+
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="left-of-logo">
@@ -49,4 +50,5 @@
 			</ul>
 		</div>
 	</header><!-- #masthead -->
+<div id="skrollr-body">
 	<div id="content" class="site-content">

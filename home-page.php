@@ -7,14 +7,15 @@
 
 get_header(); ?>
 
-<div class="jumbotron" data-0="height:400px;" data-300="height:100px;">
+  <div class="jumbotron" data-0="height:530px;" data-300="height:100px;">
   	<div class="hero-unit">
     	<h1>SDC makes connecting with other MCTC design students easy</h1>
     	<p>Get critiques of your work, hear guest speakers on the creative proccess, and build your resume and portfolio. Connection counts. </p>
     </div>
 </div>
 
-<div class="container jumbotron-after">
+
+<div class="container jumbotron-after-home">
   <div class="twothirds">
     <?php
       query_posts('cat=1');
@@ -78,4 +79,6 @@ get_header(); ?>
   </div>
 </div>
 
+
 <?php get_footer(); ?>
+

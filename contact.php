@@ -6,13 +6,13 @@
  */
 
 get_header(); ?>
-<div class="jumbotron officer-jumbo">
+<div class="jumbotron officer-jumbo" data-0="height:400px;" data-300="height:100px;">
 	<div class="hero-unit">
 		<h1>Contact</h1>
 		<p><?php the_field('brief_of_page_contents'); ?></p>
 	</div>
 </div>
-<div class="container">
+<div class="container jumbotron-after">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

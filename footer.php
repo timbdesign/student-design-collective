@@ -31,7 +31,7 @@
 
    </div><!-- end container-->
  </footer><!-- #colophon -->
-
+</div><!-- #scrollr-body -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
@@ -39,6 +39,17 @@
 
   <script language="javascript" type="text/javascript" src="<?php  echo get_template_directory_uri(); ?>/js/skrollr.min.js"></script>
 <script>
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 400) {
+        $("#masthead").addClass("darkHeader");
+    } else {
+        $("#masthead").removeClass("darkHeader");
+    }
+});
+
+
   var nav = responsiveNav(".nav-collapse");
 
 var divs = $('.hero-unit');
@@ -64,19 +75,14 @@ $(window).bind("scroll", function() {
             console.log(data.curTop);
         }
     });
+
+
 } )( jQuery );
 
 
-// Uncomment to have the calendar appear before the blog
 
-// $(window).resize(function () {
-//    if ($(window).width() < 480) {
-//        $(".twothirds").insertAfter($(".onethird"));
-//    } else {
-//        $(".onethird").insertAfter($(".twothirds"));
-//    }
 
-// });
+
 
 </script>
 </body>
