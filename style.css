@@ -685,7 +685,7 @@ header.entry-header {
 body, p, ul, li, a {
   font-family: "proxima-nova", sans-serif;
 }
-.officer-pic {display: inline-block; width: 200px; margin: 10px 20px;}
+.officer-pic {display: inline-block; width: 250px; margin: 10px 20px;}
 
 .officer-pic {
   font-family: "proxima-nova", sans-serif;
@@ -1199,11 +1199,13 @@ body {
   height: 55px;
   margin: 20px 20px 0 0 ;
   float: right;
+  right: 10px;
   text-indent: -9999px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.5) url("hamburger.gif") no-repeat 50% 47%;
   border:1px solid white;
   padding-top: none;
+  position: absolute;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min--moz-device-pixel-ratio: 1.3), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-device-pixel-ratio: 1.3), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -1232,7 +1234,7 @@ body {
 	.right-of-logo a {display: none;}
 	.site-branding  {float: left; text-align: left; margin: 5px 0 0 10px;}
 	.site-branding img {width: 70%; height: auto;}
-	#masthead {text-align: left; position: fixed;}
+	#masthead {text-align: left; position: absolute;}
 	.jumbotron-overlay {padding-top: 120%; padding-bottom: 60%;}
 	.hero-unit {margin: -100px auto; width: 90%; text-align: center; position: relative;}
 	.hero-unit h1 {line-height: 1.2em; font-size: 2.3em;}
@@ -1471,6 +1473,8 @@ font-size: .85em;
 .officer-jumbo {
 	z-index: 1;
 	height: 10%;
+	transition:all .5s ;
+    border:1px solid #000;
 }
 
 .jumbotron-overlay {
@@ -1596,10 +1600,10 @@ padding-top: 40%;
 
 .single .hero-unit {
 	position: absolute;
-	margin-top: -15%;
+	margin-top: 11%;
 }
 .page-template-officers-php .hero-unit {
-	margin-top: 11%;
+	margin-top: 11%; z-index: 99999;
 }
 .single .post_thumbnail {float:right; display: inline-block; width: 50%; height: auto; margin: 20px;}
 
@@ -1628,7 +1632,7 @@ padding-top: 40%;
    clear: both;}
 
 .col-md-2 {
-    width: 14%;
+    width: 17%;
     vertical-align: top;
   }
 .form-allowed-tags { display: none; }
@@ -1679,6 +1683,7 @@ padding-top: 60%;
  .page-template-about-php .jumbotron-overlay {
 padding-top: 60%;
 }
+.skrollable-between {position: fixed !important;}
 
 }
 
@@ -1690,6 +1695,6 @@ padding-top: 60%;
 }
 
 @media screen and (max-width: 979px) {
-.jumbotron {position: absolute !important;}
+.jumbotron {position: fixed !important;}
 }
 

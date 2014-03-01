@@ -17,40 +17,38 @@ $post_image_id = get_post_thumbnail_id($post_to_use->ID);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
-  filter: blur(5px);" data-0="height:400px;" data-300="height:100px;"></div>
+  filter: blur(5px); border: solid white 10px 0 0 0" data-0="height:400px;" data-300="height:100px;"></div>
 
 	<div class="hero-unit">
 	<h1><?php single_post_title(); ?></h1>
 	<p></p>
+
 </div>
-	<div class="cover-blur"></div>
+
 <div class="container">
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area officer-jumbo-after">
 		<main id="main" class="site-main" role="main">
 		<div class="two-thirds">
 
 
 			<?php get_template_part( 'content', 'single' ); ?>
-			<div class="post-thumbnail">
-			 <?php if ( has_post_thumbnail()) : ?>
 
-   			</div>
- 			<?php endif; ?>
+
 
 			<?php student_design_collective_post_nav(); ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || '0' != get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+
 
 		<?php endwhile; // end of the loop. ?>
 		</div>
 	<div class="one-third">
+		<div class="post-thumbnail">
+			 <?php if ( has_post_thumbnail()) : ?>
+
+   			</div>
 	<?php get_sidebar(); ?>
+	 			<?php endif; ?>
 </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
