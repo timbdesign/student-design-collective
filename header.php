@@ -38,17 +38,17 @@
 				<img src="http://timbdesign.com/studentdesign/wp-content/themes/student-design-collective/images/student-design-collective.png" alt="Student Design Collective, MCTC, Minneapolis Community and Technical College">
 			</a>
 		</div>
+		<div class="right-of-logo">
+			<ul>
+				<?php wp_nav_menu( array( 'theme_location' => 'extra-menu', 'container_class' => 'my_extra_menu_class' ) ); ?>
+			</ul>
+		</div>
 		<nav class="nav-collapse">
 		  <ul>
 			 <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'my_extra_menu_class'  ) ); ?>
 			<?php wp_nav_menu( array( 'theme_location' => 'extra-menu', 'container_class' => 'my_extra_menu_class' ) ); ?>
 		  </ul>
 		</nav>
-		<div class="right-of-logo">
-			<ul>
-				<?php wp_nav_menu( array( 'theme_location' => 'extra-menu', 'container_class' => 'my_extra_menu_class' ) ); ?>
-			</ul>
-		</div>
 	</header><!-- #masthead -->
 <div id="skrollr-body">
 	<div id="content" class="site-content">

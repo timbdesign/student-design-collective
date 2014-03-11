@@ -51,6 +51,9 @@ html {
 	-ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 body {
+	background: #333 !important;
+}
+#content {
 	background: #fff;
 }
 article,
@@ -563,7 +566,7 @@ ul  {
 	text-decoration: none;
 }
 ul li {
-	color: white;
+
 	display: inline-block;
 	text-decoration: none;
 }
@@ -584,6 +587,8 @@ nav {
 	margin-top: 30px;
 	vertical-align: top;
 	/*width: 27%;*/
+color: white;
+
 }
 .left-of-logo ul li, .right-of-logo ul li {
 	/*margin-left: 20%;*/
@@ -592,6 +597,7 @@ nav {
 	color: white;
 	font-size: 1.5em;
 	text-decoration: none;
+	padding: 8px 16px 7px;
 }
 .right-of-logo a:hover, .left-of-logo a:hover {
 	color: #F7EC1E;
@@ -1437,7 +1443,7 @@ height: 100px;
 	margin-left: .5em;
 }
 
-#menu-right-of-logo-1 li {
+#menu-right-of-logo li {
 	padding-right: 2em;
 }
 
@@ -1473,7 +1479,7 @@ font-size: .85em;
 .officer-jumbo {
 	z-index: 1;
 	height: 10%;
-	transition:all .5s ;
+	transition: opacity .5s ;
     border:1px solid #000;
 }
 
@@ -1585,7 +1591,7 @@ font-size: .85em;
 	margin-left: .5em;
 }
 
-#menu-right-of-logo-1 li {
+#menu-right-of-logo li {
 	padding-right: 7em;
 }
 
@@ -1605,7 +1611,13 @@ padding-top: 40%;
 .page-template-officers-php .hero-unit {
 	margin-top: 11%; z-index: 99999;
 }
-.single .post_thumbnail {float:right; display: inline-block; width: 50%; height: auto; margin: 20px;}
+.single .post_thumbnail {
+float: right;
+display: inline-block;
+width: 100%;
+height: auto;
+margin: 20px 0px 30px 20px;
+}
 
 .page-template-about-php .hero-unit {
 	margin-top: 11%;
@@ -1659,7 +1671,7 @@ padding: 0em 1em 3em 1em;}
  	width: 29%;
  }
  .two-thirds {}
- .page .hero-unit { margin-top: 15%; margin-left: 6%;}
+ .page .hero-unit, .single .hero-unit { margin-top: 15%; margin-left: 6%;}
 }
 @media screen and (max-width: 900px) {
 
@@ -1697,4 +1709,51 @@ padding-top: 60%;
 @media screen and (max-width: 979px) {
 .jumbotron {position: fixed !important;}
 }
+
+@media screen and (max-width: 640px) {
+	.hidden-sm {
+		display: none;
+	}
+	header#masthead {
+		position: absolute;
+		background-color: #333;
+	}
+	.jumbotron-after-home::before {
+		height: 400px !important;
+	}
+	.visible-sm {
+		position: absolute !important;
+	}
+	.jumbotron, .officer-jumbo {
+		height: 400px !important;
+	}
+
+}
+
+
+@media screen and (min-width: 640px) {
+	.visible-sm {
+		display: none;
+		position: absolute !important;
+	}
+	.current-menu-item a {padding: 8px 16px 7px;
+border: none;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-ms-border-radius: 3px;
+-o-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: 0 0 0;
+-moz-box-shadow: 0 0 0;
+box-shadow: 0 0 0;
+background-color: rgba(255,255,255,0.3) !important;}
+}
+
+.site-content .hero-unit {
+	z-index: 10 !important;
+}
+.jumbotron {
+	overflow: hidden !important;
+}
+
 

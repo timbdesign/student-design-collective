@@ -7,10 +7,16 @@
 
 get_header(); ?>
 
-  <div class="jumbotron" data-0="height:530px;" data-300="height:100px;">
+<div class="jumbotron hidden-sm" data-0="height:530px;" data-430="height:100px;">
   	<div class="hero-unit">
     	<h1>SDC makes connecting with other MCTC design students easy</h1>
     	<p>Get critiques of your work, hear guest speakers on the creative proccess, and build your resume and portfolio. Connection counts. </p>
+    </div>
+</div>
+<div class="jumbotron visible-sm">
+    <div class="hero-unit">
+      <h1>SDC makes connecting with other MCTC design students easy</h1>
+      <p>Get critiques of your work, hear guest speakers on the creative proccess, and build your resume and portfolio. Connection counts. </p>
     </div>
 </div>
 

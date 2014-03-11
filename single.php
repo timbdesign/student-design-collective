@@ -13,12 +13,18 @@ $post_image_id = get_post_thumbnail_id($post_to_use->ID);
 				if ($thumbnail) (string)$thumbnail = $thumbnail[0];
 			}
 		?>
-<div class="jumbotron officer-jumbo" style="background-image: url('<?php echo $thumbnail; ?>'); -webkit-filter: blur(5px);
+<div class="jumbotron officer-jumbo single-jumbo hidden-sm" style="background-image: url('<?php echo $thumbnail; ?>'); -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px); border: solid white 10px 0 0 0" data-0="height:400px;" data-300="height:100px;"></div>
-
+<div class="hidden-sm" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/section-grid@2x.png); background-repeat: repeat; z-index: 5; width: 100%; border: 1px solid #000; position: fixed;" data-0="height:400px;" data-300="height:100px;"></div>
+<div class="jumbotron officer-jumbo single-jumbo visible-sm" style="background-image: url('<?php echo $thumbnail; ?>'); -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); border: solid white 10px 0 0 0"></div>
+<div class="visible-sm" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/section-grid@2x.png); background-repeat: repeat; z-index: 5; width: 100%; border: 1px solid #000; position: fixed; height: 400px;"></div>
 	<div class="hero-unit">
 	<h1><?php single_post_title(); ?></h1>
 	<p></p>

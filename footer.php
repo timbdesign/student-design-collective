@@ -13,7 +13,7 @@
  <footer id="colophon" class="site-footer" role="contentinfo">
    <div class="container">
         <div class="footer-logo">
-            <img src="wp-content/uploads/2013/12/mctc-logo.png" title="MCTC logo" alt="MCTC Logo">
+            <img src="http://studentdesigncollective.com/wp-content/uploads/2013/12/mctc-logo.png" title="MCTC logo" alt="MCTC Logo">
             <div>Official MCTC Student Group
             </div>
         </div>
